@@ -11,7 +11,7 @@
 
 \title{JOSM Workshop}
 \author{Stefan Tiran  osm@stefantiran.at}
-\date{April 27th, 2018}
+\date{April 26th, 2019}
 
 \usetheme{Antibes}
 
@@ -28,11 +28,10 @@
     \item Erste Demo zum Kennenlernen
     \item Vorstellung des Vortragenden
     \item Kurze Einführung in das OSM--Datenmodell
-    \item Kurzer Überblick über das OSM--Wiki
-    \item Eingabe von Adressen
+    \item Überblick über das OSM--Wiki
     \item Arbeiten mit Layern
-    \item Arbeiten mit unterschiedlichen Datenformaten
-
+    \item Arbeiten mit OGD--Daten
+    \item Arbeiten mit Relationen
   \end{itemize}
 \end{frame}
 
@@ -145,69 +144,33 @@ Quelle: \url{https://wiki.openstreetmap.org/wiki/DE:Attribut}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Eingabe von Adressen}
+\begin{frame}[fragile]{Arbeiten mit Ebenen (Layers)}
+JOSM kennt verschiedene Arten (Types) von Ebenen (Layers)
 \begin{itemize}
-  \item Adress-Attribute sind im Namensraum \texttt{addr:} organisiert
-  \item Tagging-Schema wird auch als Karlsruhe Schema bezeichnet
-  \item Adresse besteht aus
-  \begin{itemize}
-    \item \texttt{addr:housenumber} (in UK alternativ \texttt{addr:housename})
-    \item \texttt{addr:street} oder \texttt{addr:place}
-    \item \texttt{addr:postcode}
-    \item \texttt{addr:city} oder \texttt{addr:place}
-    \item \texttt{addr:country}
-  \end{itemize}
+  \item \includegraphics[height=0.8em]{data}\hspace{0.2em} Datenebenen (Data layers)
+  \item \includegraphics[height=0.8em]{gpx}\hspace{0.2em} GPS-Ebenen (GPX layers)
+  \item \includegraphics[height=0.8em]{marker}\hspace{0.2em} Marker Ebenen (Marker layers)
+  \item \includegraphics[height=0.8em]{geoimage}\hspace{0.2em} Georeferenzierte Bilder Ebenen (Geoimage layers)
+  \item \includegraphics[height=0.8em]{imagery}\hspace{0.2em} Hintergrundbild-Ebenen (Imagery layers)
+  \item \includegraphics[height=0.8em]{validator}\hspace{0.2em} Validator-Ebene (Validator layers)
+  \item \includegraphics[height=0.8em]{note}\hspace{0.2em} OSM-Hinweise-Ebene (Notes layers)
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Eingabe von Adressen Teil 2}
+\begin{frame}{Verwendung von Open Government Data}
 \begin{itemize}
-  \item Geeignete Elemente für Adress-Attribute:
-  \begin{itemize}
-    \item Umrissfläche eines Gebäudes (\texttt{building=*})
-    \item Punkt, der Eingang in das Gebäude kennzeichnet (\texttt{entrance=yes})
-    \item Einzelpunkt, falls Gebäudeumriss nicht erruierbar
-    \item POIs
-    \begin{itemize}
-      \item \texttt{amenity=*} Einrichtung
-      \item \texttt{shop=*} Geschäfte
-      \item \texttt{tourism=*} Elemente, die für Tourismus genutzt werden
-    \end{itemize}
-  \end{itemize}
+  \item In Österreich auf \url{https://www.data.gv.at/}  
+  \item Meistens Shapefiles
+  \item opendata-Plugin erforderlich
 \end{itemize}
-
 \end{frame}
 
-\begin{frame}{Eingabe von Adressen Teil 3}
-\begin{itemize}
-  \item Nützliche Plug-Ins:
-  \begin{itemize}
-    \item HouseNumberTaggingTool: Bequemes Erfassen einer Straße
-    \item austriaaddresshelper: Automatische Abfrage der Daten vom Bundesamt für Eich- und Vermessungswesen
-  \end{itemize}
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}{Arbeiten mit unterschiedlichen Datenformaten}
-\begin{itemize}
-  \item Öffnen selbst erfasster Daten
-  \begin{itemize}
-    \item .gpx (GPS-Tracks)
-    \item .jpg (georeferenzierte Fotos)
-  \end{itemize}
-  \item Verwendung von Open Government Data
-  \begin{itemize}
-    \item In Österreich auf \url{https://www.data.gv.at/}  
-    \item Meistens Shapefiles
-    \item opendata-Plugin erforderlich
-  \end{itemize}
-\end{itemize}
+\begin{frame}{Arbeiten mit Relationen}
 \end{frame}
 
 \begin{frame}
 Folien zum JOSM--Workshop auf den
-\href{http://http://linuxtage.at/}{Grazer Linuxtagen} am 27. 4. 2018.
+\href{http://http://linuxtage.at/}{Grazer Linuxtagen} am 26. 4. 2019.
 \vspace{1cm}
 
 Folien unter \includegraphics[width=1cm]{cc-by-sa.png}.
